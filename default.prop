@@ -1,4 +1,5 @@
-ro.secure=0
+# ro.secure is no longer required since su binary is using asm code for privilege escalation
+ro.secure=1
 ro.allow.mock.location=1
 ro.debuggable=1
 persist.service.adb.enable=1
