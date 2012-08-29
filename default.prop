@@ -89,4 +89,4 @@ dalvik.vm.checkjni=false
 # Set the dalvik vm heapsize to 64MB
 dalvik.vm.heapsize=64m
 # Set the USB connection as USB storage with adb enabled
-sys.usb.config=mass_storage,adb
+presist.sys.usb.config=mass_storage,adb
