@@ -30,12 +30,6 @@ ro.ril.enable.3g.prefix=1
 ro.ril.htcmaskw1.bitmask=4294967295
 ro.ril.htcmaskw1=14449
 ro.ril.hep=1
-# Increasing the size of tcp buffer
-net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
-net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
-net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
-net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
-net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
 # Enable performance boost by using GPU acceleration
 debug.sf.hw=1
 # debug.performance.tuning=1
