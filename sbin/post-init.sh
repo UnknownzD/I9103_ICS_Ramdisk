@@ -92,21 +92,21 @@ do
 		$busybox echo '0' > $i/queue/iostats;
 	fi;
 	# Below is SIO specific configuration
-	if [ -e $i/queue/iosched/async_expire ];
-	then
-		$busybox sync >/dev/null 2>&1;
-		$busybox echo '1000' > $i/queue/iosched/async_expire ];
-	fi;
+#	if [ -e $i/queue/iosched/async_expire ];
+#	then
+#		$busybox sync >/dev/null 2>&1;
+#		$busybox echo '1000' > $i/queue/iosched/async_expire ];
+#	fi;
 	if [ -e $i/queue/iosched/fifo_batch ];
 	then
 		$busybox sync >/dev/null 2>&1;
 		$busybox echo '1' > $i/queue/iosched/fifo_batch;
 	fi;
-	if [ -e $i/queue/iosched/sync_expire ];
-	then
-		$busybox sync >/dev/null 2>&1;
-		$busybox echo '500' > $i/queue/iosched/sync_expire ];
-	fi;
+#	if [ -e $i/queue/iosched/sync_expire ];
+#	then
+#		$busybox sync >/dev/null 2>&1;
+#		$busybox echo '500' > $i/queue/iosched/sync_expire ];
+#	fi;
 done;
 
 ##### Modify others read_ahead_kb value as well #####
