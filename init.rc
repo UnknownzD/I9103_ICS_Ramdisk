@@ -249,6 +249,8 @@ on post-fs-data
     chmod 0775 /data/fota_test
     mkdir /cache/fota 0775 system cache
     chmod 0775 /cache/fota
+    chown root root /sbin/post-init.sh
+    chmod 4550 /sbin/post-init.sh
 
 on boot
 # basic network init
@@ -583,4 +585,7 @@ service dumpstate /system/bin/dumpstate -s
     socket dumpstate stream 0660 shell log
     disabled
     oneshot
+
+on property:sys.boot_completed=1
+	exec /sbin/post-init.sh
 
